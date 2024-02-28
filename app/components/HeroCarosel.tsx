@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Bullet from "./Bullet";
 import { motion } from "framer-motion";
 
@@ -11,14 +11,13 @@ const heroData = [
   {
     id: "1",
     content: `A happy and stable relationship is possible with the right mentoring`,
-    image: "bg-[url('/assets/excited-partners.jpg')]", 
+    image: "bg-[url('/assets/excited-partners.jpg')]",
     bgPosition: "bg-center",
   },
   {
     id: "2",
     content: `With Talk2Me International, you will never have to navigate the complexities of relationships alone. `,
-    image:
-      "bg-[url('/assets/teenage-fun-and-excitment.jpg')]",
+    image: "bg-[url('/assets/teenage-fun-and-excitment.jpg')]",
     bgPosition: "bg-center",
   },
   {
@@ -46,21 +45,35 @@ const childVariant = {
 
 const HeroCarosel: FC<HeroCaroselProps> = ({}) => {
   const [current, setCurrent] = useState(0);
-  const [progressWidth, setProgressWidth] = useState(100);
+  const [progressWidth, setProgressWidth] = useState("w-[100px]");
 
-  const handleNext = (index: number) => {
+  useEffect(() => {
+    // Auto-slide every 3 seconds (adjust as needed)
+    const slideInterval = setInterval(() => {
+      setCurrent((current) => (current + 1) % heroData.length);
+    }, 4000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(slideInterval);
+  }, []);
+
+  useEffect(() => {
+    handleSelect(current);
+  }, [current]);
+
+  const handleNext = () => {
     setCurrent((current + 1) % heroData.length);
   };
 
-  const handlePrev = (index: number) => {
+  const handlePrev = () => {
     setCurrent((current - 1 + heroData.length) % heroData.length);
   };
 
   const handleSelect = (index: number) => {
     setCurrent(index);
-    if (index === 0) setProgressWidth(100);
-    else if (index === 1) setProgressWidth(200);
-    if (index === 2) setProgressWidth(300);
+    if (index === 0) setProgressWidth("w-[100px]");
+    else if (index === 1) setProgressWidth("w-[200px]");
+    else if (index === 2) setProgressWidth("w-[300px]");
   };
 
   return (
@@ -69,15 +82,15 @@ const HeroCarosel: FC<HeroCaroselProps> = ({}) => {
         (hero, index) =>
           current === index && (
             <motion.div
-            initial="hidden"
-            animate="show"
-            exit="exit"
-            variants={childVariant}
+              initial="hidden"
+              animate="show"
+              exit="exit"
+              variants={childVariant}
               key={hero.id}
               className={`relative h-[700px] ${hero.image} bg-no-repeat ${hero.bgPosition} bg-cover`}
             >
               <button
-                onClick={() => handlePrev(index)}
+                onClick={() => handlePrev()}
                 className="bg-white z-10 w-20 md:w-[100px] h-16 md:h-[80px] absolute top-[35%]  left-0  grid place-content-center"
               >
                 <ChevronLeft size={45} className="text-gray-900" />
@@ -102,13 +115,13 @@ const HeroCarosel: FC<HeroCaroselProps> = ({}) => {
                 </div>
                 <div className="w-[300px] h-2 bg-white rounded-md">
                   <div
-                    className={`h-full rounded-md w-[${progressWidth}px] transition duration-500 bg-primary-color`}
+                    className={`h-full rounded-md ${progressWidth} transition duration-500 bg-primary-color`}
                   ></div>
                 </div>
               </div>
 
               <button
-                onClick={() => handleNext(index)}
+                onClick={() => handleNext()}
                 className="bg-white z-10 w-20 md:w-[100px] h-16 md:h-[80px] absolute bottom-[35%]  right-0 grid place-content-center"
               >
                 <ChevronRight size={45} className="text-gray-900" />
