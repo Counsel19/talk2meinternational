@@ -47,7 +47,7 @@ const whatWeDoData = [
     content: `We offer one-on-one mentorship programs for teens, youths, and adults where our experienced mentors provide guidance tailored to individual needs. Our mentors impart biblical wisdom and provide valuable insights to help individuals navigate the complexities of relationships.`,
   },
   {
-    image: "/assets/events.jpg",
+    image: "/assets/black-teens-mentor-meeting.jpg",
     title: "Events",
     content: `We conduct networking sessions, workshops and seminars that dive deep into various aspects of relationships.These sessions cover topics such as communication skills, conflict resolution, building trust, fostering intimacy, and more. Our goal is to equip individuals with practical tools to enhance their relationships.`,
   },
