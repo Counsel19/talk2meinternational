@@ -5,7 +5,7 @@ import { FC, useEffect, useRef } from "react";
 import Bullet from "./Bullet";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
-import { setAboutOffset } from "@/lib/redux/slices/AppSlice";
+import { setAboutOffset } from "@/lib/redux/slices/appSlice";
 
 const variantProps = {
   hidden: {

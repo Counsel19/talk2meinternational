@@ -5,7 +5,7 @@ import Bullet from "./Bullet";
 import ValueCard from "./ValueCard";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
-import { setValuesOffset } from "@/lib/redux/slices/AppSlice";
+import { setValuesOffset } from "@/lib/redux/slices/appSlice";
 
 interface CoreValuesProps {}
 const CoreValues: FC<CoreValuesProps> = ({}) => {

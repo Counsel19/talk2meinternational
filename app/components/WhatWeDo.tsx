@@ -4,7 +4,7 @@ import { FC, useEffect, useRef } from "react";
 import WhatWeDoCard from "./WhatWeDoCard";
 import Bullet from "./Bullet";
 import { useDispatch } from "react-redux";
-import { setWhatWeDoOffset } from "@/lib/redux/slices/AppSlice";
+import { setWhatWeDoOffset } from "@/lib/redux/slices/appSlice";
 
 interface WhatWeDoProps {}
 const WhatWeDo: FC<WhatWeDoProps> = ({}) => {

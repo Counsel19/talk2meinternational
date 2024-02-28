@@ -5,7 +5,7 @@ import Bullet from "./Bullet";
 import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
-import { setContactOffset } from "@/lib/redux/slices/AppSlice";
+import { setContactOffset } from "@/lib/redux/slices/appSlice";
 import axios, { AxiosError } from "axios";
 // @ts-ignore
 import { TailSpin } from "react-loader-spinner";
