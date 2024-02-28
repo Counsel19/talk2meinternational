@@ -24,7 +24,7 @@ const WhatWeDo: FC<WhatWeDoProps> = ({}) => {
           <Bullet />
         </div>
 
-        <h3 className="text-gray-800 text-3xl font-semibold">What We Do</h3>
+        <h3 className="text-gray-800 text-2xl md:text-3xl font-semibold">What We Do</h3>
       </div>
 
       <div>

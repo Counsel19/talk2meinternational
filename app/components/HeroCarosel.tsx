@@ -87,7 +87,7 @@ const HeroCarosel: FC<HeroCaroselProps> = ({}) => {
               exit="exit"
               variants={childVariant}
               key={hero.id}
-              className={`relative h-[700px] ${hero.image} bg-no-repeat ${hero.bgPosition} bg-cover`}
+              className={`relative vh-subtract-40 lg:h-screen ${hero.image} bg-no-repeat ${hero.bgPosition} bg-cover`}
             >
               <button
                 onClick={() => handlePrev()}

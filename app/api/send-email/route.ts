@@ -24,7 +24,7 @@ export const POST = async (req: NextRequest) => {
 
     let mailData = await transporter.sendMail({
       from: process.env.EMAIL,
-      to: "hello@talk2meinternational.com", // list of receivers
+      to: "info@talk2meinternational.com", // list of receivers
       subject: subjectLine, // Subject line
       html: HTML_TEMPLATE({
         name: `${firstname} ${lastname}`,

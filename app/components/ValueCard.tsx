@@ -1,6 +1,6 @@
 "use client"
 
-import { Cctv, Church, Coffee, Palmtree } from "lucide-react";
+import { Handshake , Church, HandHeart , Palmtree } from "lucide-react";
 import { FC } from "react";
 import { motion } from "framer-motion"; 
 
@@ -37,9 +37,9 @@ const ValueCard: FC<ValueCardProps> = ({
           {id === "01" ? (
             <Church size={40} className="text-primary-color" />
           ) : id === "02" ? (
-            <Cctv size={40} className="text-primary-color" />
+            <Handshake size={40} className="text-primary-color" />
           ) : id === "03" ? (
-            <Coffee size={40} className="text-primary-color" />
+            <HandHeart size={40} className="text-primary-color" />
           ) : (
             <Palmtree size={40} className="text-primary-color" />
           )}
@@ -50,7 +50,7 @@ const ValueCard: FC<ValueCardProps> = ({
 
           <h3 className={`text-2xl font-normal text-black`}>{title}</h3>
           <hr className="" />
-          <p className={` text-gray-800 font-light`}>{content}</p>
+          <p className={` text-gray-800 font-light leading-7`}>{content}</p>
         </div>
       </div>
     </motion.div>

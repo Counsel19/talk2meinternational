@@ -75,14 +75,14 @@ const WhatWeDoCard: FC<WhatWeDoCardProps> = ({
         initial="hidden"
         whileInView="show"
         variants={rightVarProps}
-        className="relative flex-1 "
+        className="relative flex-1"
       >
         <div className="mb-6">
           <h3 className="text-2xl uppercase font-semibold max-w-[200px]">
             {title}
           </h3>
         </div>
-        <p className="text-lg leading-8 text-slate-600">{content}</p>
+        <p className="text-lg font-light leading-8 text-slate-600">{content}</p>
 
         {isVariant ? (
           <div className="absolute right-0 h-[50px] lg:h-[100px] w-[50px] lg:w-[100px] bg-primary-color top-0 lg:-top-20 rounded-bl-full" />

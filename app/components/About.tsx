@@ -40,7 +40,7 @@ const About: FC<AboutProps> = ({}) => {
           <div className="w-fit">
             <Bullet />
           </div>
-          <h2 className="text-black text-3xl font-semibold">
+          <h2 className="text-black text-2xl md:text-3xl font-semibold">
             About <br /> Talk2Me International
           </h2>
         </div>
@@ -53,10 +53,10 @@ const About: FC<AboutProps> = ({}) => {
           variants={variantProps}
           className="max-w-[510px]"
         >
-          <h4 className="text-xl mb-4 font-semibold text-gray-900 uppercase">
+          <h4 className="text-lg mb-4 font-semibold text-gray-900 uppercase">
             Get to know us
           </h4>
-          <p className="leading-7 text-lg text-gray-500">
+          <p className="leading-8 text-lg text-gray-500">
             Talk2Me International is a non-profit organisation committed to
             mentoring teens, youths, and adults in embracing Godly and
             Bible-based relationships. We believe that healthy relationships are

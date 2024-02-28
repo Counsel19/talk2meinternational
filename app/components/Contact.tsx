@@ -16,7 +16,7 @@ const init = {
   email: "",
   subjectLine: "",
   message: "",
-}
+};
 
 interface ContactProps {}
 const Contact: FC<ContactProps> = ({}) => {
@@ -61,8 +61,8 @@ const Contact: FC<ContactProps> = ({}) => {
     setSuccess("");
     try {
       const res = await axios.post("/api/send-email", input);
-      setInput(init)
-      return setSuccess(res.data?.message || "Message Sent Succesfully!" );
+      setInput(init);
+      return setSuccess(res.data?.message || "Message Sent Succesfully!");
     } catch (error) {
       if (error instanceof AxiosError) {
         return setError(error.response?.data);
@@ -80,11 +80,12 @@ const Contact: FC<ContactProps> = ({}) => {
       whileInView="show"
       variants={variantProps}
       ref={contactRef}
-      className="bg-gradient lg:px-[10%] md:p-10 py-10 p-4"
+      className="bg-gradient lg:px-[10%] md:p-10 my-24 md:my-0 py-10 p-4"
     >
-      <div className="flex gap-3 mb-6 ">
-        <Bullet />
-
+      <div className="flex flex-col mb-6 ">
+        <div className="w-fit">
+          <Bullet />
+        </div>
         <h3 className="text-gray-800 text-3xl font-semibold">Contact Us</h3>
       </div>
 
@@ -92,8 +93,11 @@ const Contact: FC<ContactProps> = ({}) => {
         <div className="space-y-6">
           <p className=" text-lg font-light text-gray-800 leading-8  ">
             If you have any questions, suggestions, or would like to get
-            involved with Talk2Me International, please don&apos;t hesitate to
-            reach out to us.
+            involved with{" "}
+            <span className="text-primary-color font-semibold">
+              Talk2Me&nbsp;International
+            </span>
+            , please don&apos;t hesitate to reach out to us.
           </p>
           <div className="text-lg font-light text-gray-800 leading-8 flex flex-col  ">
             <p>You can contact us through:</p>
@@ -102,7 +106,7 @@ const Contact: FC<ContactProps> = ({}) => {
                 <Mail size={20} className="text-black" />
               </div>
               <span className="text-base font-semibold text-gray-800">
-                hello@talk2meinternational.com
+                info@talk2meinternational.com
               </span>
             </div>
           </div>

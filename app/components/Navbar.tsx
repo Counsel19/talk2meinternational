@@ -45,7 +45,7 @@ const [ refReady, setRefReady] = useState(false)
 
   return (
     <div
-      className={`  ${
+      className={`max-w-full  ${
         scrolling ? "bg-white bg-opacity-90 shadow-lg" : "bg-transparent "
       } fixed top-0 py-0 md:py-4 z-20 w-full`}
     >

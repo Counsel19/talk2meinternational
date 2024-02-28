@@ -18,7 +18,7 @@ export default function Home() {
   const mainRef = useRef<HTMLElement | null>(null);
   return (
     <>
-      <main ref={mainRef}>
+      <main ref={mainRef} className="grid overflow-hidden">
         <ProgressBar target={mainRef} />
         <Navbar target={mainRef} />
 
