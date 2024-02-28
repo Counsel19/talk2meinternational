@@ -61,7 +61,7 @@ const GetInvolved: FC<GetInvolvedProps> = ({}) => {
 
           <div className="absolute grid w-[400px] h-[400px] overflow-hidden rounded-full shadow-xl border-2 border-rose-900 ">
             <Image
-              src="/assets/young-love-on-grass.jpg "
+              src="/assets/young-love-on-grass.jpg"
               alt="teenage-fun-and-excitment"
               width={600}
               height={400}
