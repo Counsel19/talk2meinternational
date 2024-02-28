@@ -47,7 +47,7 @@ const [ refReady, setRefReady] = useState(false)
     <div
       className={`  ${
         scrolling ? "bg-white bg-opacity-90 shadow-lg" : "bg-transparent "
-      } fixed top-0 py-0 md:py-6 z-20 w-full`}
+      } fixed top-0 py-0 md:py-4 z-20 w-full`}
     >
       <div className="px-4 lg:px-[10%] mx-auto flex justify-between gap-6  items-center">
         <Brand />
