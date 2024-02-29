@@ -51,7 +51,7 @@ const HeroCarosel: FC<HeroCaroselProps> = ({}) => {
     // Auto-slide every 3 seconds (adjust as needed)
     const slideInterval = setInterval(() => {
       setCurrent((current) => (current + 1) % heroData.length);
-    }, 4000);
+    }, 7000);
 
     // Clear the interval when the component unmounts
     return () => clearInterval(slideInterval);
