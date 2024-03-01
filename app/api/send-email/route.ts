@@ -14,7 +14,7 @@ export const POST = async (req: NextRequest) => {
       port: 587,
       host: "smtp-relay.brevo.com",
       debug: true,
-      secure: true,
+      secure: false,
 
       auth: {
         user: process.env.EMAIL,
