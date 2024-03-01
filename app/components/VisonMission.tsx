@@ -29,7 +29,7 @@ const VisonMission: FC<VisonMissionProps> = ({}) => {
   };
 
   return (
-    <div className="bg-gradient pb-10 md:h-[1200px] pt-[300px] lg:px-[10%] px-4 md:px-6">
+    <div className="bg-gradient pb-10 mb-24 md:h-[1200px] pt-[300px] lg:px-[10%] px-4 md:px-6">
       <motion.div
         initial="hidden"
         whileInView="show"

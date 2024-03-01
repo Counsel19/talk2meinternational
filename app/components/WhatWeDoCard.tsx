@@ -85,9 +85,9 @@ const WhatWeDoCard: FC<WhatWeDoCardProps> = ({
         <p className="text-lg font-light leading-8 text-slate-600">{content}</p>
 
         {isVariant ? (
-          <div className="absolute right-0 h-[50px] lg:h-[100px] w-[50px] lg:w-[100px] bg-primary-color top-0 lg:-top-20 rounded-bl-full" />
+          <div className="absolute right-0 h-[50px] lg:h-[80px] w-[50px] lg:w-[80px] bg-primary-color top-0 lg:-top-10 rounded-bl-full" />
         ) : (
-          <div className="absolute right-0 h-[50px] lg:h-[100px] w-[50px] lg:w-[100px] bg-black top-0 lg:-top-20 rounded-tr-full" />
+          <div className="absolute right-0 h-[50px] lg:h-[80px] w-[50px] lg:w-[80px] bg-black top-0 lg:-top-10 rounded-tr-full" />
         )}
       </motion.div>
     </div>

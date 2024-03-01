@@ -18,7 +18,7 @@ const WhatWeDo: FC<WhatWeDoProps> = ({}) => {
   }, [whatWeDoRef.current]);
 
   return (
-    <div id="what-we-do" ref={whatWeDoRef} className="my-16 ">
+    <div id="what-we-do" ref={whatWeDoRef} className="mb-24">
       <div className=" mb-6 lg:px-[10%] px-4 md:px-6">
         <div className="w-fit">
           <Bullet />

@@ -11,8 +11,8 @@ export const POST = async (req: NextRequest) => {
       return new Response("Invalid Input", { status: 400 });
 
     const transporter = nodemailer.createTransport({
-      port: 465,
-      host: "smtp.hostinger.com",
+      port: 587,
+      host: "smtp-relay.brevo.com",
       debug: true,
       secure: true,
 

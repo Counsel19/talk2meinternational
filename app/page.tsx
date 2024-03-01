@@ -13,6 +13,7 @@ import ProgressBar from "./components/ProgressBar";
 import { useRef } from "react";
 import { ArrowUp } from "lucide-react";
 import Link from "next/link";
+import Team from "./components/Team";
 
 export default function Home() {
   const mainRef = useRef<HTMLElement | null>(null);
@@ -33,6 +34,8 @@ export default function Home() {
         <CoreValues />
 
         <GetInvolved />
+
+        <Team />
 
         <Contact />
 

@@ -25,7 +25,7 @@ const GetInvolved: FC<GetInvolvedProps> = ({}) => {
       initial="hidden"
       whileInView="show"
       variants={variantProps}
-      className="md:px-[10%] px-4 my-24 md:my-36"
+      className="md:px-[10%] px-4 mb-24"
     >
       <div className="  mb-6 ">
         <div className="w-fit">
@@ -37,7 +37,7 @@ const GetInvolved: FC<GetInvolvedProps> = ({}) => {
 
       <div className="flex gap-20 items-center justify-between ">
         <div className="space-y-6 lg:w-1/2 relative">
-          <div className="absolute right-0 h-[50px] lg:h-[100px] w-[50px] lg:w-[100px] bg-gray-200 -top-10 lg:-top-20 rounded-tr-full" />
+          <div className="absolute right-0 h-[50px] lg:h-[80px] w-[50px] lg:w-[80px] bg-gray-200 -top-10 lg:-top-20 rounded-tr-full" />
           <p className=" text-lg font-light text-gray-800 leading-8">
             We welcome anyone who shares our passion for godly relationships to
             join us in our mission. Whether you are seeking mentorship,
@@ -52,7 +52,7 @@ const GetInvolved: FC<GetInvolvedProps> = ({}) => {
             Together, let us create a culture of healthy and thriving
             relationships, guided by God&apos;s Word.
           </p>
-          <div className="absolute left-0 h-[50px] lg:h-[100px] w-[50px] lg:w-[100px] bg-black lg:-bottom-28 rounded-bl-full" />
+          <div className="absolute left-0 h-[50px] lg:h-[80px] w-[50px] lg:w-[80px] bg-black lg:-bottom-28 rounded-bl-full" />
         </div>
 
         <div className="relative hidden w-[440px] h-[440px] lg:flex justify-center items-center ">

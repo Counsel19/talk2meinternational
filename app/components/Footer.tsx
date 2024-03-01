@@ -11,7 +11,7 @@ const Footer: FC<FooterProps> = ({}) => {
 
       <div className="flex gap-4 items-center">
         <Link
-          href="/"
+          href="https://www.facebook.com/T2MGLOBAL"
           className="grid place-content-center w-10 h-10 p-2 rounded-lg bg-gray-800"
         >
           <Image
@@ -23,26 +23,14 @@ const Footer: FC<FooterProps> = ({}) => {
         </Link>
 
         <Link
-          href="/"
+          href="https://www.instagram.com/talk2meinternational?igsh=MWFwdXlmN2RqdTk2aA=="
           className="grid place-content-center p-2 rounded-lg w-10 h-10 bg-gray-800"
         >
           <Image
             src="/assets/instagram.svg"
-            width={10}
-            height={10}
-            alt="face-book-icon"
-          />
-        </Link>
-
-        <Link
-          href="/"
-          className="grid place-content-center w-10 h-10 p-2 rounded-lg bg-gray-800"
-        >
-          <Image
-            src="/assets/twitter.svg"
-            width={10}
-            height={10}
-            alt="face-book-icon"
+            width={16}
+            height={16}
+            alt="instagram-icon"
           />
         </Link>
       </div>

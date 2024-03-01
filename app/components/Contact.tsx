@@ -80,7 +80,7 @@ const Contact: FC<ContactProps> = ({}) => {
       whileInView="show"
       variants={variantProps}
       ref={contactRef}
-      className="bg-gradient lg:px-[10%] md:p-10 my-24 md:my-0 py-10 p-4"
+      className="bg-gradient lg:px-[10%] md:p-10 mb-24 md:my-0 py-10 p-4"
     >
       <div className="flex flex-col mb-6 ">
         <div className="w-fit">

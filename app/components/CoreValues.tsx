@@ -31,7 +31,7 @@ const CoreValues: FC<CoreValuesProps> = ({}) => {
   
 
   return (
-    <div id="values" ref={valueRef} className="lg:px-[10%] px-4 md:px-6 my-20">
+    <div id="values" ref={valueRef} className="lg:px-[10%] px-4 md:px-6 mb-24">
       <div className="mb-6">
         <div className="w-fit">
           <Bullet />
