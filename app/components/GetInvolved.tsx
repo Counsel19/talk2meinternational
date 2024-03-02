@@ -32,7 +32,7 @@ const GetInvolved: FC<GetInvolvedProps> = ({}) => {
           <Bullet />
         </div>
 
-        <h3 className="text-gray-800 text-3xl font-semibold">Get Involved</h3>
+        <h3 className="text-gray-800 text-3xl font-semibold">Partner with us</h3>
       </div>
 
       <div className="flex gap-20 items-center justify-between ">

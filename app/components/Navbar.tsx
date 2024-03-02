@@ -105,7 +105,7 @@ const [ refReady, setRefReady] = useState(false)
             href="#contact"
             className="transition-all duration-500 ease-in-out text-sm md:text-normal bg-primary-color py-3 px-4 rounded-lg text-secondary-color font-semibold hover:bg-rose-800 hover:text-white"
           >
-            Get Involved
+           Contact Us
           </Link>
         </div>
       </div>
